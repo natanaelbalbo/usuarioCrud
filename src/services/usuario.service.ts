@@ -38,7 +38,7 @@ class usuarioService{
     async delete(id : string){
         try{
             const deletedusuario= await usuarioSchema.findByIdAndDelete(id)
-            return "usuario Removida"
+            return "usuario Removido"
         }catch(error){
             console.error(error);
         }
